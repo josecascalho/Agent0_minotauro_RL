@@ -1,0 +1,39 @@
+{
+  "host": "127.0.0.1",
+  "port": 50001,
+
+  "graphics_mode": "minotauro",
+  "image_directory": "./images/",
+
+  "background_color": "lightgray",
+  "step_color": "turquoise",
+  "view_color": "red",
+  "object_dictionary": {
+    " ": "free space",
+    "O": "visible obstacle",
+    "I": "invisible obstacle",
+    "B": "bomb",
+    "G": "goal",
+    "A": "agent start position (only 1)",
+    "T": "target"
+  },
+  "object_map":[
+    "OOOOOOOO",
+    "OG     O",
+    "O     AO",
+    "OOOOOOOO"
+  ],
+    "reward_dictionary": {
+    "N": 0,
+    "J": -2,
+    "T": -50,
+    "G": 100,
+    "R": "random"
+  },
+  "reward_map" : [
+    "NNNNNNNN",
+    "NGNNNNNN",
+    "NNNNNNNN",
+    "NNNNNNNN"
+  ]
+}
